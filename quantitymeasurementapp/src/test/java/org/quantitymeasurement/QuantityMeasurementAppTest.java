@@ -1,6 +1,7 @@
 package org.quantitymeasurement;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.quantitymeasurement.uc3.QuantityMeasurementApp;
 
 import static org.junit.jupiter.api.Assertions.*;
 
