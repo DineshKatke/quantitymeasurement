@@ -26,17 +26,17 @@ public class QuantityMeasurementApp {
 
     public static void main(String[] args){
 
-//        demonstrateLenghtComparison(1.0, Length.LengthUnit.FEET,
-//                                            12.0, Length.LengthUnit.INCHEES);
-//
-//        demonstrateLenghtComparison(1.0, Length.LengthUnit.YARDS,
-//                36.0, Length.LengthUnit.INCHEES);
-//
-//        demonstrateLenghtComparison(3.0, Length.LengthUnit.FEET,
-//                1.0, Length.LengthUnit.YARDS);
-//
-//        demonstrateLenghtComparison(30.48, Length.LengthUnit.CENTIMETERS,
-//                1.0, Length.LengthUnit.FEET);
+        demonstrateLenghtComparison(1.0, Length.LengthUnit.FEET,
+                                            12.0, Length.LengthUnit.INCHES);
+
+        demonstrateLenghtComparison(1.0, Length.LengthUnit.YARDS,
+                36.0, Length.LengthUnit.INCHES);
+
+        demonstrateLenghtComparison(3.0, Length.LengthUnit.FEET,
+                1.0, Length.LengthUnit.YARDS);
+
+        demonstrateLenghtComparison(30.48, Length.LengthUnit.CENTIMETERS,
+                1.0, Length.LengthUnit.FEET);
 
         demonstrateLenghtConversion(1.0, Length.LengthUnit.FEET, Length.LengthUnit.INCHES);
         demonstrateLenghtConversion(3.0, Length.LengthUnit.YARDS, Length.LengthUnit.FEET);
