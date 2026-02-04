@@ -48,4 +48,11 @@ QuantityMeasurementApp.Feet quantityMeasurementApp;
 
         assertTrue((feet1.equals(feet1)));
     }
+
+    @Test
+    public void testInchesEqualitySameValue(){
+        QuantityMeasurementApp.Feet feet1 = new QuantityMeasurementApp.Feet(10);
+
+        assertTrue((feet1.equals(feet1)));
+    }
 }
