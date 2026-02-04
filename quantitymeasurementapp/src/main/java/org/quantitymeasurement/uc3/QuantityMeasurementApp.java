@@ -52,7 +52,7 @@ public class QuantityMeasurementApp {
 
     public static void demonstrateFeetInchesComparison() {
         Length length1 = new Length(1.0, Length.LengthUnit.FEET);
-        Length length2 = new Length(12.0, Length.LengthUnit.INCHEES);
+        Length length2 = new Length(12.0, Length.LengthUnit.INCHES);
         System.out.println("Are lenghts equal ? "+ length1.equals(length2));
     }
 
