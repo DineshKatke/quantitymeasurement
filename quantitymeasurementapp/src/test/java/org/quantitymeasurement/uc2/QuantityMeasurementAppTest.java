@@ -15,7 +15,7 @@ public class QuantityMeasurementAppTest {
     @Test
     public void testFeetEqualitySameValue(){
         QuantityMeasurementApp.Feet feet1 = new QuantityMeasurementApp.Feet(10);
-        org.quantitymeasurement.QuantityMeasurementApp.Feet feet2 = new org.quantitymeasurement.QuantityMeasurementApp.Feet(10);
+        QuantityMeasurementApp.Feet feet2 = new QuantityMeasurementApp.Feet(10);
 
         assertTrue(feet1.equals(feet2));
     }
