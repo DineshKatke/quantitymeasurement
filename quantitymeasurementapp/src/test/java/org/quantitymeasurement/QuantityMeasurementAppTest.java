@@ -122,6 +122,23 @@ QuantityMeasurementApp.Feet quantityMeasurementApp;
     }
 
     @Test
+    public void testEqualityDiffrentClass(){
+        Length inch1 = new Length(1.0, Length.LengthUnit.INCHES);
+        String test = "test";
+        assertFalse(inch1.equals(test));
+
+    }
+
+    @Test
+    public void testEqualityQuantityMeasurementDiffrentClass(){
+        QuantityMeasurementApp.Inches inch1 = new QuantityMeasurementApp.Inches(1.0);
+        String test = "test";
+        assertFalse(inch1.equals(test));
+
+    }
+
+
+    @Test
     public void testEqualityNullComparison(){
         Length inch1 = new Length(1.0, Length.LengthUnit.INCHES);
         Length inch2 = new Length(3.0, Length.LengthUnit.INCHES);

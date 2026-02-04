@@ -27,9 +27,9 @@ public class Length {
 
     private double convertToBaseUnit(){
         if (this.unit == LengthUnit.FEET){
-            return this.value * LengthUnit.FEET.conversionFactor;
+            return this.value * LengthUnit.FEET.getConversionFactor();
         }
-        return this.value * LengthUnit.INCHES.conversionFactor;
+        return this.value * LengthUnit.INCHES.getConversionFactor();
     }
 
     public boolean equals(Object o){
