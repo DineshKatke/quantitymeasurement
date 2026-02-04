@@ -31,7 +31,7 @@ public class Length {
     }
 
     private double convertToBaseUnit(){
-        return Math.round((this.value * this.unit.conversionFactor)*100.00) / 100.00 ;
+        return Math.round((this.value * this.unit.getConversionFactor())*100.00) / 100.00 ;
     }
 
     public boolean equals(Object o){
