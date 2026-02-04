@@ -1,4 +1,4 @@
-package org.quantitymeasurement;
+package org.quantitymeasurement.uc1;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -9,7 +9,7 @@ public class Main {
         System.out.printf("Hello and welcome!");
 
         QuantityMeasurementApp.Feet feet1 = new QuantityMeasurementApp.Feet(10);
-        QuantityMeasurementApp.Feet feet2 = new QuantityMeasurementApp.Feet(10.11);
+        QuantityMeasurementApp.Feet feet2 = new QuantityMeasurementApp.Feet(10.00);
 
         System.out.println(feet1.equals(feet2));
 
