@@ -2,6 +2,8 @@ package org.quantitymeasurement.uc8;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import uc9.Weight;
+import uc9.WeightUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.quantitymeasurement.uc8.QuantityMeasurementApp.demonstrateLengthAddition;
@@ -14,6 +16,43 @@ public class QuantityMeasurementAppTest {
 
     @Mock
     Length length;
+
+    @Test
+    public  void kilogramEqualsThousandGrams(){
+        Weight weight1 = new Weight(1.0, WeightUnit.KILOGRAM);
+        Weight weight2 = new Weight(1000.0,WeightUnit.GRAM);
+        assertTrue(weight1.compare(weight2));
+    }
+
+    @Test
+    public  void poundEquals453Point592Grams(){
+        Weight weight1 = new Weight(1.0, WeightUnit.POUND);
+        Weight weight2 = new Weight(453.592,WeightUnit.GRAM);
+        assertTrue(weight1.compare(weight2));
+    }
+
+    @Test
+    public  void tonneEquals1000000Grams(){
+        Weight weight1 = new Weight(1.0, WeightUnit.POUND);
+        Weight weight2 = new Weight(453.592,WeightUnit.GRAM);
+        assertTrue(weight1.compare(weight2));
+    }
+
+    @Test
+    public  void kilogramNotEqualToPound(){
+        Weight weight1 = new Weight(1.0, WeightUnit.KILOGRAM);
+        Weight weight2 = new Weight(1.0,WeightUnit.POUND);
+        assertFalse(weight1.compare(weight2));
+    }
+
+    @Test
+    public  void additionOfWeightEqualsExpected(){
+        Weight weight1 = new Weight(1.0, WeightUnit.KILOGRAM);
+        Weight weight2 = new Weight(1000.0,WeightUnit.GRAM);
+        Weight weight3 = weight1.add(weight2,WeightUnit.KILOGRAM);
+        Weight expectedWeight = new Weight(2,WeightUnit.KILOGRAM);
+        assertTrue(weight3.equals(expectedWeight));
+    }
 
     @Test
     public  void testFeetEquality(){

@@ -1,6 +1,17 @@
 package org.quantitymeasurement.uc8;
 
+import uc9.Weight;
+import uc9.WeightUnit;
+
 public class QuantityMeasurementApp {
+
+    public static Weight demonstrateWeightaddition(Weight weight1,Weight weight2, WeightUnit targetUnit) {
+        return weight1.add(weight2,WeightUnit.GRAM);
+    }
+
+    public static boolean demonstrateWeightEquality(Weight weight1,Weight weight2, WeightUnit targetUnit) {
+        return weight1.equals(weight2);
+    }
 
     public static boolean demonstrateLengthEquality(Length length1, Length length2){
         return length1.equals(length2);

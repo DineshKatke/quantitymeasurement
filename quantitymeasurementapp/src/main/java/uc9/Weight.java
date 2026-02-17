@@ -44,7 +44,7 @@ public class Weight {
 
     }
 
-    private boolean compare(Weight weight){
+    public boolean compare(Weight weight){
         return (Double.compare(this.unit.converToBaseUnit(this.value),weight.unit.converToBaseUnit(weight.value))==0);
     }
 
